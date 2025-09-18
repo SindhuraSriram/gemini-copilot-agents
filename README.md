@@ -1,11 +1,11 @@
-# 🚀 CopilotKit + Google DeepMind Gemini + LangGraph Template
+# CopilotKit + Google DeepMind Gemini + LangGraph Template
 
 A full-stack template to build AI agents using **CopilotKit**, **Google DeepMind’s Gemini**, and **LangGraph**.  
 Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [Features](#features)  
 2. [Tech Stack](#tech-stack)  
@@ -20,7 +20,7 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Post Generator Agent**  
   Generate LinkedIn & Twitter posts based on context you provide.
@@ -30,34 +30,36 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
-| Layer       | Technology                             |
-|--------------|------------------------------------------|
-| Frontend     | Next.js 15 with CopilotKit UI Layer     |
-| Backend      | FastAPI (Python)                        |
-| Agents       | Google Gemini + LangGraph               |
-| Deployment   | Vercel (frontend), Python host (backend) |
+| Layer         | Technology & Tools                                                                 |
+|---------------|-------------------------------------------------------------------------------------|
+| **Frontend**  | Next.js 15 (TypeScript), CopilotKit SDK (`@copilotkit/react-core`, `@copilotkit/runtime`, `@copilotkit/react-ui`) |
+| **Backend**   | FastAPI (Python), Uvicorn (ASGI server)                                             |
+| **Agents**    | Google Gemini via `google-genai` (official SDK), LangGraph (StateGraphs for workflows), LangChain’s Google adapter |
+| **Data Models** | Pydantic (structured JSON tool outputs)                                           |
+| **Deployment**| Vercel (frontend), typical Python host (backend)                                    |
+
 
 ---
 
-## 📸 Demo
+## Demo
 
-### 🎥 Video Walkthrough
+### Video Walkthrough
 
 <video src="https://github.com/user-attachments/assets/1e95c9e1-2d55-4f63-b805-be49fe94a493" controls width="800"></video>
 
-### 🖼️ Screenshots
+### Screenshots
 
 #### Post Generator in Action
-<img src="./docs/images/post-generator.png" alt="Post Generator Screenshot" width="800"/>
+<img src="https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example1.gif" alt="Post Generator Demo" width="800"/>
 
 #### Stack Analyzer Output
-<img src="./docs/images/stack-analyzer.png" alt="Stack Analyzer Screenshot" width="800"/>
+<img src="https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example2.gif" alt="Stack Analyzer Demo" width="800"/>
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```plaintext
 .
@@ -74,7 +76,15 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ---
 
-## 🔧 Setup & Installation
+##  High-Level Architecture
+
+<p align="center">
+  <img src="https://gist.githubusercontent.com/Anmol-Baranwal/8a833b19cc6a876296ca8df11731cbeb/raw/7483be99e3842eae8dbbbd7c4a8259495af1d405/architecture" 
+       alt="High-Level Architecture" width="800"/>
+</p>
+
+
+## Setup & Installation
 
 ### 1. Clone the repository
 
@@ -118,7 +128,7 @@ uvicorn main:app --reload --port 8000
 
 ---
 
-## ⚙️ Usage
+## Usage
 
 - Navigate to [http://localhost:3000](http://localhost:3000)  
 - Make sure the FastAPI backend is running.  
@@ -127,13 +137,13 @@ uvicorn main:app --reload --port 8000
 
 ---
 
-## 🌐 Hosted Demo
+## Hosted Demo
 
 Live version: **https://copilot-kit-deepmind.vercel.app/**
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Ensure environment variables are correctly set before running.  
 - Backend must be running before frontend can fetch agent responses.  
@@ -141,7 +151,7 @@ Live version: **https://copilot-kit-deepmind.vercel.app/**
 
 ---
 
-## 🔍 Why This Matters
+## Why This Matters
 
 This template shows how you can build AI agents that are:
 
@@ -151,7 +161,7 @@ This template shows how you can build AI agents that are:
 
 ---
 
-## 🙌 Credits
+## Credits
 
 - [CopilotKit](https://github.com/CopilotKit/CopilotKit)  
 - [LangGraph](https://www.langchain.com/langgraph)  
