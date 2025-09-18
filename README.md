@@ -1,86 +1,158 @@
-# Open Gemini Canvas
+# 🚀 CopilotKit + Google DeepMind Gemini + LangGraph Template
 
-https://github.com/user-attachments/assets/1e95c9e1-2d55-4f63-b805-be49fe94a493
+A full-stack template to build AI agents using **CopilotKit**, **Google DeepMind’s Gemini**, and **LangGraph**.  
+Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
-# CopilotKit + Google DeepMind (Gemini) + LangGraph Template
+---
 
-This project showcases how to build practical AI agents with **CopilotKit**, **Google DeepMind’s Gemini**, and **LangGraph**.  
-It includes two agents, exposed through a **Next.js frontend** and a **FastAPI backend**.
+## 📋 Table of Contents
 
-## ✨ Features
+1. [Features](#features)  
+2. [Tech Stack](#tech-stack)  
+3. [Demo](#demo)  
+4. [Project Structure](#project-structure)  
+5. [Setup & Installation](#setup--installation)  
+6. [Usage](#usage)  
+7. [Hosted Demo](#hosted-demo)  
+8. [Notes](#notes)  
+9. [Why This Matters](#why-this-matters)  
+10. [Credits](#credits)
+
+---
+
+## 🌟 Features
 
 - **Post Generator Agent**  
-  Generate LinkedIn and Twitter posts from the context you provide.  
-  Useful for creating professional, context-aware social content.
+  Generate LinkedIn & Twitter posts based on context you provide.
 
 - **Stack Analyzer Agent**  
-  Provide a URL and get a detailed breakdown of the site’s technology stack.  
-  Quickly identify frameworks, libraries, and infrastructure used.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js  
-- **Backend**: FastAPI  
-- **Agents**:  Google Gemini + LangGraph
-- **UI Layer**: CopilotKit
-
-
-## 📌 About
-
-This demo illustrates how CopilotKit can be paired with LangGraph and Gemini to create agents that are:
-- **Context-aware** (understand the input you provide)
-- **Task-focused** (generate content or analyze stacks)
-- **UI-integrated** (feels like part of your app, not just a chatbox)
-
+  Given a URL, get a detailed breakdown of the website’s tech stack.
 
 ---
 
-## Project Structure
+## 🧰 Tech Stack
 
-- `/` — Next.js 15 app (UI) in the Project Root 
-- `agent/` — FastAPI backend agent (Python)
+| Layer       | Technology                             |
+|--------------|------------------------------------------|
+| Frontend     | Next.js 15 with CopilotKit UI Layer     |
+| Backend      | FastAPI (Python)                        |
+| Agents       | Google Gemini + LangGraph               |
+| Deployment   | Vercel (frontend), Python host (backend) |
 
 ---
 
-## 🚀 Getting Started
+## 📸 Demo
+
+**Video Walkthrough**  
+[Watch the demo video](https://github.com/user-attachments/assets/1e95c9e1-2d55-4f63-b805-be49fe94a493)
+
+**Screenshots**  
+
+- *Post Generator UI*  
+  ![Post Generator](./docs/images/post-generator.png)
+
+- *Stack Analyzer Output*  
+  ![Stack Analyzer](./docs/images/stack-analyzer.png)
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+.
+├── agent/             # FastAPI backend agents
+│   ├── main.py
+│   └── ...
+├── app/               # Next.js frontend
+│   ├── pages/
+│   ├── components/
+│   └── ...
+├── docs/              # Images, diagrams, documentation assets
+└── README.md
+```
+
+---
+
+## 🔧 Setup & Installation
 
 ### 1. Clone the repository
-Clone this repo `git clone <project URL>`
 
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
 
-### 2. Environment Configuration
+### 2. Configuration
 
-Create a `.env` file in each relevant directory as needed. 
+Create `.env` files in both frontend and backend directories.
 
-#### Backend (`agent/.env`):
+- **Backend** (`agent/.env`):
+
 ```env
 GOOGLE_API_KEY=<<your-gemini-key-here>>
 ```
 
-#### Frontend (`/.env`):
+- **Frontend** (`.env` in root):
+
 ```env
 GOOGLE_API_KEY=<<your-gemini-key-here>>
 ```
 
----
+### 3. Install dependencies
 
-### 3. Running the project
+- **Frontend**:
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
----
+- **Backend**:
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
-
----
-
-## Notes
-- Ensure the backend agent is running before using the frontend.
-- Update environment variables as needed for your deployment.
+```bash
+cd agent
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
 
 ---
 
-### Hosted URL: https://copilot-kit-deepmind.vercel.app/
+## ⚙️ Usage
+
+- Navigate to [http://localhost:3000](http://localhost:3000)  
+- Make sure the FastAPI backend is running.  
+- Use the **Post Generator** to create LinkedIn/Twitter posts.  
+- Use the **Stack Analyzer** to inspect a website’s tech stack.
+
+---
+
+## 🌐 Hosted Demo
+
+Live version: **https://copilot-kit-deepmind.vercel.app/**
+
+---
+
+## 📝 Notes
+
+- Ensure environment variables are correctly set before running.  
+- Backend must be running before frontend can fetch agent responses.  
+- Adjust image paths (`./docs/images/...`) if needed.
+
+---
+
+## 🔍 Why This Matters
+
+This template shows how you can build AI agents that are:
+
+- **Context-aware** — understand what the user inputs  
+- **Task-focused** — perform well-defined jobs (post generation, stack analysis)  
+- **UI-integrated** — embedded in the app UI, not just an external tool  
+
+---
+
+## 🙌 Credits
+
+- [CopilotKit](https://github.com/CopilotKit/CopilotKit)  
+- [LangGraph](https://www.langchain.com/langgraph)  
+- [Google Gemini](https://deepmind.google/technologies/gemini)  
+- Inspired by the [CopilotKit blog post](https://dev.to/copilotkit/heres-how-to-build-fullstack-agent-apps-gemini-copilotkit-langgraph-15jb)  
