@@ -43,16 +43,17 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ## 📸 Demo
 
-**Video Walkthrough**  
-[Watch the demo video](https://github.com/user-attachments/assets/1e95c9e1-2d55-4f63-b805-be49fe94a493)
+### 🎥 Video Walkthrough
 
-**Screenshots**  
+<video src="https://github.com/user-attachments/assets/1e95c9e1-2d55-4f63-b805-be49fe94a493" controls width="800"></video>
 
-- *Post Generator UI*  
-  ![Post Generator](./docs/images/post-generator.png)
+### 🖼️ Screenshots
 
-- *Stack Analyzer Output*  
-  ![Stack Analyzer](./docs/images/stack-analyzer.png)
+#### Post Generator in Action
+<img src="./docs/images/post-generator.png" alt="Post Generator Screenshot" width="800"/>
+
+#### Stack Analyzer Output
+<img src="./docs/images/stack-analyzer.png" alt="Stack Analyzer Screenshot" width="800"/>
 
 ---
 
@@ -78,8 +79,8 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/SindhuraSriram/gemini-copilot-agents.git
+cd gemini-copilot-agents
 ```
 
 ### 2. Configuration
