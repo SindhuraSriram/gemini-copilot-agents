@@ -51,11 +51,9 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
 
 ### Screenshots
 
-#### Post Generator in Action
-<img src="https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example1.gif" alt="Post Generator Demo" width="800"/>
+- [Post Generator in Action](https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example1.gif)  
+- [Stack Analyzer Output](https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example2.gif)
 
-#### Stack Analyzer Output
-<img src="https://github.com/SindhuraSriram/gemini-copilot-agents/blob/main/assets/example2.gif" alt="Stack Analyzer Demo" width="800"/>
 
 ---
 
@@ -82,6 +80,7 @@ Includes agents exposed through a Next.js frontend and a FastAPI backend.
   <img src="https://gist.githubusercontent.com/Anmol-Baranwal/8a833b19cc6a876296ca8df11731cbeb/raw/7483be99e3842eae8dbbbd7c4a8259495af1d405/architecture" 
        alt="High-Level Architecture" width="800"/>
 </p>
+
 
 
 ## Setup & Installation
