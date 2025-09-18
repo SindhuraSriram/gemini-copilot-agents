@@ -216,11 +216,9 @@ This project can be extended in several exciting directions:
 ---
 
 ## Credits
-
-- [CopilotKit](https://github.com/CopilotKit/CopilotKit)  
+ 
 - [LangGraph](https://www.langchain.com/langgraph)  
 - [Google Gemini](https://deepmind.google/technologies/gemini)  
-- Inspired by the [CopilotKit blog post](https://dev.to/copilotkit/heres-how-to-build-fullstack-agent-apps-gemini-copilotkit-langgraph-15jb)  
 
 <p align="center">
   <a href="https://github.com/CopilotKit/CopilotKit" target="_blank">
